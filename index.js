@@ -15,7 +15,7 @@ function currentLine(line) {
     newLine.push("The line is currently: " + [" " + i + "." + " " + line]);
     newLine++;
   } else {
-    line = "The line is currently empty."
+    return ("The line is currently empty.")
   }
   return newLine;
 }
