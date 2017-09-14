@@ -30,7 +30,7 @@ function currentLine(line) {
       // '1. Bill'
       newLine.push(`${i + 1}. ${line[i]}`);
     }
-    return `The line is currently: ${newLine}`;
+    return `The line is currently: ${newLine.join(', ')}`;
   } else {
     return ("The line is currently empty.")
   }
