@@ -1,17 +1,24 @@
 var katzDeli = [];
 
 function takeANumber(katzDeliLine, newName) {
-  // our line is katzDeliLine and the person coming in the line is newName
-  // katzDeliLine is an array, example: ['john']
-  // takeANumber(katzDeliLine, "bob")
-  // we expect katzDeliLine to equal ['john', 'bob']
-  // we expect to be returned to us "Welcome, Bob. You are number 2. in line."
   katzDeliLine.push(newName)
   return `Welcome, ${newName}. You are number ${katzDeliLine.length} in line.`
 }
 
-function nowServing() {
-
+function nowServing(line) {
+  // line would equal = [] if it's empty
+  if(line.length === 0){
+    return 'There is nobody waiting to be served!';
+  } else {
+    // returns an announcement about the person it is serving, and shifts the line
+    // what do we store values in?
+    var name = line[0]
+    // line is equal to ['john', 'bob']
+    line.shift()
+    // line is now equal to ['bob']
+    // name is still equal to 'john'
+    return `Currently serving ${name}.`
+  }
 }
 
 function currentLine(line) {
