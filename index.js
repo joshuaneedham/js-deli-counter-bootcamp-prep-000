@@ -1,7 +1,12 @@
 var katzDeli = [];
 
 function takeANumber(katzDeliLine, newName) {
-  return katzDeliLine;
+  var i = 1;
+  if(newName == 1){
+    return (i) 
+  } else {
+    return(i)
+  }
 }
 
 function nowServing() {
