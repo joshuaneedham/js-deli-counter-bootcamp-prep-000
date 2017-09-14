@@ -7,7 +7,7 @@ function takeANumber(katzDeliLine, newName) {
   } else {
     newName = ('Welcome, ${newName}. You are number ${i} in line');
   }
-  return 
+  return
 }
 
 function nowServing() {
