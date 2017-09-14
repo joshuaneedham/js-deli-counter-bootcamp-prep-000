@@ -22,11 +22,15 @@ function nowServing(line) {
 }
 
 function currentLine(line) {
-  var newLine = [];
-  var i = 1;
   if (line.length > 0){
-    newLine.push("The line is currently: " + [" " + i + "." + " " + line]);
-    newLine++;
+    var newLine = [];
+    for (var i = 0; i < line.length; i++) {
+      // first loop i is 0
+      // line[i] is 'Bill'
+      // '1. Bill'
+      newLine.push(`${i + 1}. ${line[i]}`);
+    }
+    return `The line is currently: ${newLine}`;
   } else {
     return ("The line is currently empty.")
   }
