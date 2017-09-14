@@ -2,11 +2,12 @@ var katzDeli = [];
 
 function takeANumber(katzDeliLine, newName) {
   var i = 1;
-  if(newName === 1){
+  if(katzDeliLine === 1){
     newName = ('Welcome, ${newName}. You are number 1 in line.');
   } else {
     newName = ('Welcome, ${newName}. You are number ${i} in line');
   }
+  return 
 }
 
 function nowServing() {
