@@ -1,7 +1,7 @@
 var katzDeli = [];
 
 function takeANumber(katzDeliLine, newName) {
-  
+
 }
 
 function nowServing() {
@@ -13,7 +13,7 @@ function currentLine(line) {
   var i = 1;
   if (line.length > 0){
     newLine.push("The line is currently: " + [" " + i + "." + " " + line]);
-    line++;
+    newLine++;
   } else {
     line = "The line is currently empty."
   }
