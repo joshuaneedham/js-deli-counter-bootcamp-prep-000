@@ -1,12 +1,13 @@
 var katzDeli = [];
 
 function takeANumber(katzDeliLine, newName) {
-  var i = 1;
-  if(katzDeliLine.length == 1){
-    newName = ('Welcome, ${newName}. You are number 1 in line.');
-  } else {
-    newName = ('Welcome, ${newName}. You are number ${i} in line');
-  }
+  // our line is katzDeliLine and the person coming in the line is newName
+  // katzDeliLine is an array, example: ['john']
+  // takeANumber(katzDeliLine, "bob")
+  // we expect katzDeliLine to equal ['john', 'bob']
+  // we expect to be returned to us "Welcome, Bob. You are number 2. in line."
+  katzDeliLine.push(newName)
+  return `Welcome, ${newName}. You are number ${katzDeliLine.length} in line.`
 }
 
 function nowServing() {
